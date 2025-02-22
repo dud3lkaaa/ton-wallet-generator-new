@@ -1,0 +1,20 @@
+{
+  "name": "ton-wallet-generator-new",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.9",
+    "typescript": "^5.3.3",
+    "vite": "^5.4.8"
+  },
+  "dependencies": {
+    "@ton/crypto": "^3.2.0",
+    "@ton/ton": "^15.2.1",
+    "axios": "^1.6.7"
+  }
+}

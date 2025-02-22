@@ -1,0 +1,80 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  width: 90%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+button {
+  background: #00c4cc;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.2em;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+button:hover {
+  background: #00a3aa;
+  transform: scale(1.05);
+}
+
+button:disabled {
+  background: #666;
+  cursor: not-allowed;
+}
+
+.progress {
+  margin: 20px 0;
+  font-size: 1.5em;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.results {
+  margin-top: 30px;
+}
+
+.results h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+#walletList {
+  list-style: none;
+  padding: 0;
+}
+
+#walletList li {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  font-size: 1.1em;
+  word-break: break-word;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
