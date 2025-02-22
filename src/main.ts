@@ -1,8 +1,8 @@
 import { mnemonicNew, mnemonicToPrivateKey } from '@ton/crypto';
-import { WalletContractV4 } from '@ton/ton'; // Исправляем импорт
+import { WalletContractV4 } from '@ton/ton';
 import axios from 'axios';
 
-// Тип для кошелька
+// Интерфейс для кошелька
 interface Wallet {
   seed_phrase: string;
   address: string;
@@ -22,7 +22,7 @@ const API_KEYS = [
 const TON_API_URL = 'https://tonapi.io/v2/accounts';
 const BATCH_SIZE = 5;
 let checked = 0;
-const results: { all_wallets: Wallet[]; balance_wallets: Wallet[] } = { all_wallets: [], balance_wallets: [] }; // Явный тип
+const results: { all_wallets: Wallet[]; balance_wallets: Wallet[] } = { all_wallets: [], balance_wallets: [] };
 const usedSeeds = new Set<string>();
 
 async function generateWallet(): Promise<Wallet> {
